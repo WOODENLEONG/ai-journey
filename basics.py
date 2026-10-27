@@ -27,3 +27,8 @@ def c_to_f(temp):
     return (temp *9/5) +32
 f=c_to_f(30)
 print(f+1)  # This will cause a TypeError because f is None
+
+
+#Part 5: for loops
+for c in range (0,101,10):
+    print(c, "C = ", c_to_f(c), "F")
