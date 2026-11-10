@@ -1,3 +1,14 @@
+# 1. List vs dict:
+# List: a list in Python allows you to store multiple values in a single variable using square brackets[]
+# Dict: a dictionary associates keys with values (key-in values pairs) inside curly brace {}
+
+# 2. Why use with open():
+# with open() is used to open a file and automatically handles closing it when finishing.
+
+# 3. Why I need float():
+# float() is used to convert a string/ integer to a decimal number.
+
+
 # Warm-up 1: a list = many values in order (like a sample buffer)
 temps = [25.1,26.0,24.8]
 #Prediction: temps[0] = 25.1, temps[1] = 26.0, temps[2] = 24.8 , len(temps) = 3  
@@ -33,7 +44,7 @@ for row in rows: # one loop = one sample
     temps.append(float(row["temperature"])) # add the sample to the buffer, converting the string to a float    
 
     #Prediction: temps = [25.1, 26.0, 24.8, 25.5, 26.2, 25.9, 24.7, 25.3, 26.1, 25.4]
-    print(temps)
+print(temps)
 
 
 #Problem:
